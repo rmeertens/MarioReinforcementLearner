@@ -1,0 +1,4 @@
+averageScore, wins, averageKills, averageDistance, averageTimeSpent,coinsGainedPerEvaluation,percentageCoinsGained,flowersDevouredPerEvaluation,percentageFlowersDevoured,mushroomsPerEvaluation,percentageMushrooms,killsByFirePerEvaluation,percentageKillsByFire,killsByStompPerEvaluation,percentageKillsByStomp,killsByShellPerEvaluation,percentageKillsByShell,timeLeftPerEvaluation,killsTotal,milisTotal,totalStatesExplored
+1936.920044 0.000000 0.091202 0.153594 78.839996 7.940000 0.029596 0.000000 NaN 0.000000 0.000000 0.000000 0.000000 3.000000 0.500000 0.000000 0.000000 120.000000 7.760000 4226 27327
+1897.359985 0.000000 0.091306 0.153672 87.120003 9.260000 0.035121 0.000000 NaN 0.040000 0.400000 0.000000 0.000000 3.000000 0.500000 0.000000 0.000000 112.000000 7.720000 4436 27727
+2259.780029 0.000000 0.125802 0.197812 77.180000 10.520000 0.041300 0.000000 NaN 0.020000 0.333333 0.000000 0.000000 5.000000 0.500000 0.000000 0.000000 122.000000 10.880000 4012 27969
