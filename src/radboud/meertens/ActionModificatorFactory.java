@@ -1,10 +1,16 @@
 package radboud.meertens;
 
 public class ActionModificatorFactory {
-
-	public static ActionModificatorInterface getActionModificator() throws Exception
+	public static final int HTTPMARIOSERVER = 0; 
+	public static final int KEYBOARDCONTROLS = 1;
+	public static ActionModificatorInterface getActionModificator(int actionModificator) throws Exception
 	{
-		//return new TwitchObject2();
-		return new HTTPMarioServer();
+		// TODO: this is super super ugy!
+		if(actionModificator == HTTPMARIOSERVER)
+		{
+			return new HTTPMarioServer();
+		}
+		throw new NullPointerException();
+		
 	}
 }

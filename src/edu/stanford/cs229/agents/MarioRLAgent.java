@@ -94,25 +94,26 @@ public class MarioRLAgent implements LearningAgent {
 			LearningParams.NUM_TRAINING_ITERATIONS);
 	private List<String> evaluationInfos = new ArrayList<String>(
 			LearningParams.NUM_TRAINING_ITERATIONS);
-	ActionModificatorInterface twitchObject;
+	ActionModificatorInterface userActionOverrideObject;
 
 	public MarioRLAgent() throws Exception {
-		twitchObject = ActionModificatorFactory.getActionModificator();
-		twitchObject.startListening();
-		setName("BNAIC teaches mario!!");
+		// Initialise the overriding  
+		userActionOverrideObject = ActionModificatorFactory.getActionModificator(ActionModificatorFactory.HTTPMARIOSERVER);
+		userActionOverrideObject.startListening();
+		
+		// Set the name of the agent
+		setName("User overriding mario!!");
 
 		currentState = new MarioState();
 		actionTable = new ActionQtable(MarioAction.TOTAL_ACTIONS);
-		System.out.println("Loaded qtable: " + LearningParams.LOAD_QTABLE);
-		if (LearningParams.LOAD_QTABLE) {
-			System.out.println("Loaded qtable!!!!: "
-					+ LearningParams.LOAD_QTABLE);
+		System.out.println("Loaded qtable: " + LearningParams.LOAD_PREVIOUS_STATE);
+		if (LearningParams.LOAD_PREVIOUS_STATE) {
+			// Load the previous q-table, level we were left, the scores and the evaluation info
 			actionTable.loadQtable(LearningParams.FINAL_QTABLE_NAME);
 			InformationSingleton.getInstance().setLevel(loadLevel());
-			// Load actionTable
-			// Load scores
 			scores = loadScores();
 			evaluationInfos = loadEvaluationInfos();
+			System.out.println("MarioRLAGent loaded previous state");
 		}
 
 		Logger.println(0, "*************************************************");
@@ -143,52 +144,39 @@ public class MarioRLAgent implements LearningAgent {
 	private List<Integer> loadScores() {
 		String scorefile = "scoresReached.txt";
 		try {
-
-			// To read the list from a file, do the following:
-
 			FileInputStream fis = new FileInputStream(scorefile);
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			List<Integer> newScores = (ArrayList<Integer>)ois.readObject();
 			ois.close();
 			return newScores;
 		} catch (Exception e) {
-			System.err.println("Failed to load scores from: " + scorefile);
+			System.err.println("MarioRLAgent failed to load scores from: " + scorefile);
 		}
-		// return 0;
 		return new ArrayList<Integer>(LearningParams.NUM_TRAINING_ITERATIONS);
 	}
 
 	@Override
 	public boolean[] getAction() {
-		// Transforms the best action number to action array.
-		int actionNumber = actionTable.getNextAction(currentState
-				.getStateNumber(), this.currentPhase==Phase.LEARN);
-		// System.out.println("MarioRLAgent.getAction: Current phas learn: " +
-		// (this.currentPhase == Phase.LEARN) + " eval: " +
-		// (this.currentPhase==Phase.EVAL) + " else: " +
-		// (this.currentPhase==Phase.INIT));
+		// Get the action number the q learning algorithm would normally execute
+		int actionNumber = actionTable.getNextAction(currentState.getStateNumber(), this.currentPhase==Phase.LEARN);
+		
+		// If we are learning this frame say so to the informationSingleton. 
 		if(this.currentPhase == Phase.LEARN)
 		{
-			//System.out.println("We are now learning" + InformationSingleton.getInstance().getFramesTrained());
 			InformationSingleton.getInstance().trainFrame();
 		}
-		if (this.currentPhase == Phase.LEARN
-				&& LearningParams.PLAYING_WITH_TWITCH) {
-			int newactionNumber = twitchObject.modifyAction(actionNumber);
+		
+		// If a user is playing/overriding we want to override this action
+		if (this.currentPhase == Phase.LEARN && LearningParams.USERS_OVERRIDING_ACTIONS) {
+			int newactionNumber = userActionOverrideObject.modifyAction(actionNumber);
 			actionTable.overrideNextAction(newactionNumber);
-			// System.out.println("MarioRLAgent.getAction: overwriting action for "
-			// + actionNumber + " to " + newactionNumber);
 			actionNumber = newactionNumber;
-
-		} else if (currentPhase == Phase.INIT) {
+		}
+		// If we are initialising (waiting till Mario hits the ground) we do nothing. 
+		else if (currentPhase == Phase.INIT) {
 			return MarioAction.DO_NOTHING.getAction();
 
-		} else {
-			// System.out.println("MarioRLAgent.getAction: Not overwriting action");
 		}
-
-		Logger.println(2, "Next action: " + actionNumber + "\n");
-
 		return MarioAction.getAction(actionNumber);
 	}
 

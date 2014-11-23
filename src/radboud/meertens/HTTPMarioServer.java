@@ -6,7 +6,6 @@ import java.net.InetSocketAddress;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
@@ -36,7 +35,6 @@ public class HTTPMarioServer implements ActionModificatorInterface {
 		JFrame frame = new JFrame("HelloWorldSwing");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		// Add the ubiquitous "Hello World" label.
 		JLabel label = new JLabel("Hello World");
 		frame.getContentPane().add(label);
 

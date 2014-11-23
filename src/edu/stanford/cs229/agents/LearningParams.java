@@ -15,7 +15,7 @@ public class LearningParams {
   public static final int MAXIMUM_DIFFUCULTY= 0;
   public static final int NEW_WORLD_EVERY_X_LEVELS = 10;
 
-  public static final boolean PLAYING_WITH_TWITCH= true;
+  public static final boolean USERS_OVERRIDING_ACTIONS= true;
   public static final boolean WAIT_FOR_ACTION= false;
   public static final int VISUALISE_FIRST_X_EVALUATIONS = 0;
   public static final int VISUALISE_FIRST_X_LEARNING = 0;
@@ -139,7 +139,7 @@ public class LearningParams {
   /**
    * Whether we should load the final Q table trained from last time.
    */
-  public static boolean LOAD_QTABLE = true;
+  public static boolean LOAD_PREVIOUS_STATE = true;
   
   /**
    * The format of intermediate Q table dump filenames.
