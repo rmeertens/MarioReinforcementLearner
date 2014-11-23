@@ -5,8 +5,11 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Random;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -74,20 +77,36 @@ public class HTTPMarioServer implements ActionModificatorInterface {
 		HTTPMarioServer parent;
 		JTextArea textArea;
 
-		HashMap<String, MarioCommandWithTime> actions = new HashMap<String, MarioCommandWithTime>();
-
+		ConcurrentHashMap<String, MarioCommandWithTime> actions = new ConcurrentHashMap<String, MarioCommandWithTime>();
+		ConcurrentHashMap<String, MarioCommandWithTime> actionsThatExpired = new ConcurrentHashMap<String, MarioCommandWithTime>();
+		
 		public MyHandler(HTTPMarioServer parent, JTextArea are) {
 			this.parent = parent;
 			this.textArea = are;
 		}
 
-		public HashMap<String, MarioCommandWithTime> getActions() {
+		public ConcurrentHashMap<String, MarioCommandWithTime> getActions() {
+			
+			Date currentDate = new Date();
+			System.out.println("amount of actions: " + actions.size());
+			for(Iterator<Entry<String, MarioCommandWithTime>> it = actions.entrySet().iterator(); it.hasNext(); ) {
+			      Entry<String, MarioCommandWithTime> entry = it.next();
+			      if(currentDate.getTime() - entry.getValue().dateSent.getTime() > 1500) {
+			    	 actionsThatExpired.put(entry.getKey(), entry.getValue());
+			        it.remove();
+			        
+			        System.err.println("Removed the entry by " + entry.getKey() + " due to inactivity");
+			      }
+			    }
+			InformationSingleton.getInstance().setGotAction(actions.size() > 0);
+			
+			System.out.println("amount of actions: " + actions.size() + " amount of removed actions" + actionsThatExpired.size());
 			return actions;
 
 		}
 
 		public void handle(HttpExchange t) throws IOException {
-			System.err.println("handling stuff");
+			//System.err.println("handling stuff");
 			Map<String, String> parms = HTTPMarioServer.queryToMap(t
 					.getRequestURI().getQuery());
 
@@ -96,7 +115,7 @@ public class HTTPMarioServer implements ActionModificatorInterface {
 			if (parms.containsKey("option")) {
 				response = "congratulations, you did it";
 				String option = parms.get("option");
-				System.out.println("option = " + option);
+				//System.out.println("option = " + option);
 
 				if ("pressButtons".equals(option)) {
 										
@@ -112,21 +131,38 @@ public class HTTPMarioServer implements ActionModificatorInterface {
 
 				} else if ("releaseButtons".equals(option)) {
 					String newName = parms.get("name");
-					actions.remove(newName);
+					if (actions.containsKey(newName))
+					{
+						actions.remove(newName);
+					}
 					boolean gotAction = actions.size() > 0;
 					System.out.println("Because " + newName + " stopped pressing we now have " + actions.size() + " actions " + gotAction);
 					InformationSingleton.getInstance().setGotAction(gotAction);
 					this.textArea.append(newName + " released buttons\n");
 				} else if ("refreshTime".equals(option)) {
 					String newName = parms.get("name");
-					MarioCommandWithTime toAdd = actions.get(newName);
-					toAdd.dateSent = new Date();
-					actions.put(newName, toAdd);
+					if (actions.containsKey(newName))
+					{
+						MarioCommandWithTime toAdd = actions.get(newName);
+						toAdd.dateSent = new Date();
+						actions.put(newName, toAdd);
+					}
+					else if (actionsThatExpired.containsKey(newName))
+					{
+						MarioCommandWithTime toAdd = actions.get(newName);
+						toAdd.dateSent = new Date();
+						actions.put(newName, toAdd);
+					}
+					else
+					{
+						System.err.println("Trying to refresh a time that does not exist");
+					}
 					this.textArea.append(newName + " updated\n");
 				}
 
 			} else {
 				response = "Use /marioserver?option=yourKey&foo=unused to see how to handle url parameters";
+				//192.168.2.17:8001/marioserver?option=pressButtons&name=Roland&command=left
 				System.out.println("Something else");
 				this.textArea.append("Received something strange\n");
 
@@ -164,13 +200,14 @@ public class HTTPMarioServer implements ActionModificatorInterface {
 	public int modifyAction(int actionNumber) {
 
 		if (InformationSingleton.getInstance().getHasAction()) {
-			HashMap<String, MarioCommandWithTime> actions = theHandler
-					.getActions();
-			
-			
+			ConcurrentHashMap<String, MarioCommandWithTime> actions = theHandler.getActions();
 			Object[] values = actions.values().toArray();
+			
 			try {
-				
+				if (values.length==0)
+				{
+					return actionNumber;
+				}
 				MarioCommandWithTime randomValue = getPopularElement(values);
 				//Random generator = new Random();
 				//int index = generator.nextInt(values.length);
@@ -197,10 +234,12 @@ public class HTTPMarioServer implements ActionModificatorInterface {
 	  MarioCommandWithTime popular = (MarioCommandWithTime)a[0];
 	  MarioCommandWithTime temp = (MarioCommandWithTime)a[0];
 	  
+	  // Take each element except for the last one
 	  for (int i = 0; i < (a.length - 1); i++)
 	  {
 	    temp = ((MarioCommandWithTime) a[i]);
 	    tempCount = 0;
+	    // Takes each element except for the first one
 	    for (int j = 1; j < a.length; j++)
 	    {
 	      if (temp.nameCommand.equals(((MarioCommandWithTime)a[j]).nameCommand))
@@ -212,6 +251,7 @@ public class HTTPMarioServer implements ActionModificatorInterface {
 	      count = tempCount;
 	    }
 	  }
+	  
 	  return popular;
 	}
 	@Override

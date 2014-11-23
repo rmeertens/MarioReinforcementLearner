@@ -21,12 +21,13 @@ public class ActionQtable extends Qtable {
   }
 
   @Override
-  public int getBestAction(long stateNumber) {
-    float[] rewards = this.getActionsQValues(stateNumber);
+  public int getBestAction(long stateNumber, boolean isLearning) {
+    float[] rewards = this.getActionsQValues(stateNumber, isLearning);
     if (rewards == null) {
       System.err.println("No rewards defined for this state");
       return 0;
-    } else {
+    } 
+    else {
       float maxRewards = Float.NEGATIVE_INFINITY;
       int indexMaxRewards = 0;
 
@@ -45,7 +46,7 @@ public class ActionQtable extends Qtable {
   }
   
   @Override
-  public void updateQvalue(float reward, long currentStateNumber) {
+  public void updateQvalue(float reward, long currentStateNumber, boolean isLearning) {
 	  transitions.addTransition(prevState, prevAction, currentStateNumber);
 
     // Update Q values using the following update rule:
@@ -54,19 +55,21 @@ public class ActionQtable extends Qtable {
     //     (1 - alpha) * Qprev + alpha * (reward + gamma * maxQ)
     //
     // where alpha = learningRate / # prevState/prevAction visited.
-    float[] prevQs = getActionsQValues(prevState);
+    float[] prevQs = getActionsQValues(prevState,isLearning);
     float prevQ = prevQs[prevAction];
 
-    int bestAction = getBestAction(currentStateNumber);
-    float maxQ = getActionsQValues(currentStateNumber)[bestAction];
+    int bestAction = getBestAction(currentStateNumber, isLearning);
+    float maxQ = getActionsQValues(currentStateNumber,isLearning)[bestAction];
 
-    float alpha =
-        learningRate / transitions.getCount(prevState, prevAction);
+    //float alpha =
+     //   learningRate / (transitions.getCount(prevState, prevAction));
     
-    //alpha = 0.15f;
+    float alpha = 0.15f;
 
     //alpha = 0.15f;
-    
+   // System.out.printf("%.6f\n", alpha);
+
+    //System.out.println("Alpha: " + alpha);
     float newQ = (1 - alpha) * prevQ +  alpha * (reward + gammaValue * maxQ);
 
     prevQs[prevAction] = newQ;
@@ -112,7 +115,7 @@ public class ActionQtable extends Qtable {
     long state = Long.valueOf(tokens[0]);
     String[] qvalueStrings = tokens[1].split(" ");
     String[] countStrings = tokens[2].split(" ");
-    float[] qvalues = getActionsQValues(state);
+    float[] qvalues = getActionsQValues(state,false);
     for (int i = 0; i < actionRange; i++) {
       qvalues[i] = Float.valueOf(qvalueStrings[i]);
       transitions.setCount(state, i, Integer.valueOf(countStrings[i]));
@@ -132,4 +135,7 @@ public class ActionQtable extends Qtable {
       System.err.println("Failed to load qtable from: " + logfile);
     }
   }
+
+
+
 }

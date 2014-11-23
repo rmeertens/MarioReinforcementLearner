@@ -19,7 +19,7 @@ public class LearningParams {
   public static final boolean WAIT_FOR_ACTION= false;
   public static final int VISUALISE_FIRST_X_EVALUATIONS = 0;
   public static final int VISUALISE_FIRST_X_LEARNING = 0;
-  public static final int FRAMES_PER_SECOND_FPS = 18;
+  public static final int FRAMES_PER_SECOND_FPS = 14;
 
   public static int NUM_TRAINING_ITERATIONS = 1; // Number of evaluations that run before an evaluation run is ran
   public static int NUM_EVAL_ITERATIONS = 50; // Number of evaluation iterations to run that are hidden from the users
@@ -53,7 +53,7 @@ public class LearningParams {
    * random. Note that the explorationChance is not a final because it is
    * customary that the exploration chance changes as the training goes on.
    */
-  public static final float EXPLORATION_CHANCE = 0.1f;
+  public static final float EXPLORATION_CHANCE = 0.4f;
   
 
   /**
@@ -77,7 +77,8 @@ public class LearningParams {
    * state and action are visited increase.
    */
   public static final float LEARNING_RATE = 0.8f;
- 
+  //public static final float LEARNING_RATE = 0.4f;
+  
   // Reward/state related params.
   /**
    * The minimum distance Mario must travel in a frame to receive distance

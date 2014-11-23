@@ -18,10 +18,29 @@ public class InformationSingleton {
    private String latestName = "";
    private boolean runningTwitch = false;
    private boolean hasAction = false;
+   private int statesExplored =0;
+   private long framesTrained=0;
    
    public int getWorldReached()
    {
 	   return this.LEVEL_REACHED/LearningParams.NEW_WORLD_EVERY_X_LEVELS;
+   }
+   public long getFramesTrained()
+   {
+	   return framesTrained;
+   }
+   public void trainFrame()
+   {
+	   framesTrained++;
+   }
+   public void exploreStateWhileLearning()
+   {
+	   System.err.println("Exploring state!");
+	   statesExplored++;
+   }
+   public int getStatesExploredWhileLearning()
+   {
+	   return statesExplored;
    }
    public int getLevelReached()
    {

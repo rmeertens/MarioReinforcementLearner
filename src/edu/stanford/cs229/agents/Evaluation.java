@@ -83,14 +83,17 @@ public class Evaluation {
 		float percentageKillsByShell;
 
 		float timeLeftPerEvaluation;
+		long statesExploredWhileLearning;
+		long framesTrained;
 
 		public static String getHeader() {
-			return "averageScore, wins, averageKills, averageDistance, averageTimeSpent,coinsGainedPerEvaluation,percentageCoinsGained,flowersDevouredPerEvaluation,percentageFlowersDevoured,mushroomsPerEvaluation,percentageMushrooms,killsByFirePerEvaluation,percentageKillsByFire,killsByStompPerEvaluation,percentageKillsByStomp,killsByShellPerEvaluation,percentageKillsByShell,timeLeftPerEvaluation,killsTotal,milisTotal,totalStatesExplored";
+			return "averageScore, wins, averageKills, averageDistance, averageTimeSpent,coinsGainedPerEvaluation,percentageCoinsGained,flowersDevouredPerEvaluation,percentageFlowersDevoured,mushroomsPerEvaluation,percentageMushrooms,killsByFirePerEvaluation,percentageKillsByFire,killsByStompPerEvaluation,percentageKillsByStomp,killsByShellPerEvaluation,percentageKillsByShell,timeLeftPerEvaluation,killsTotal,milisTotal,totalStatesExplored, statesLearned, trainedFrames";
 		}
 
 		public String toString() {
 			return String
-					.format("%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %d %d",
+					//.format("%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %d %d",
+					.format("%f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %f, %d, %d, %d, %d",
 							averageScore, wins, averageKills, averageDistance,
 							averageTimeSpent, coinsGainedPerEvaluation,
 							percentageCoinsGained,
@@ -100,7 +103,8 @@ public class Evaluation {
 							percentageKillsByFire, killsByStompPerEvaluation,
 							percentageKillsByStomp, killsByShellPerEvaluation,
 							percentageKillsByShell, timeLeftPerEvaluation,
-							killsTotal, milisTotal, totalStatesExplored);
+							killsTotal, milisTotal, totalStatesExplored, 
+							statesExploredWhileLearning,framesTrained);
 
 		}
 
@@ -166,7 +170,8 @@ public class Evaluation {
 			totalNumberOfCreatures += evaluationInfo.totalNumberOfCreatures;
 			totalNumberOfFlowers += evaluationInfo.totalNumberOfFlowers;
 			totalNumberOfMushrooms += evaluationInfo.totalNumberOfMushrooms;
-
+			statesExploredWhileLearning = InformationSingleton.getInstance().getStatesExploredWhileLearning();
+			framesTrained = InformationSingleton.getInstance().getFramesTrained();
 		}
 	}
 
@@ -202,9 +207,7 @@ public class Evaluation {
 		BasicTask basicTask = new BasicTask(marioAIOptions);
 		for (int i = 0; i < LearningParams.VISUALISE_FIRST_X_EVALUATIONS; i++) {
 			// Set to a different seed for EVERY evaluation.
-			System.out
-					.println("Evaluation.evaluate: Starting evaluation number "
-							+ i);
+			System.out.println("Evaluation.evaluate: Starting evaluation number "+ i);
 			marioAIOptions.setLevelRandSeed(evaluationSeed++);
 			marioAIOptions.setVisualization(true);
 
@@ -222,7 +225,10 @@ public class Evaluation {
 		basicTask = new BasicTask(marioAIOptions);
 		EvaluationData results = new EvaluationData();
 		evaluationResults.add(results);
-
+		
+		// TODO: this might be strange
+		//evaluationSeed = 0;
+		
 		for (int i = 0; i < LearningParams.NUM_EVAL_ITERATIONS; i++) {
 			// Set to a different seed for EVERY evaluation.
 			marioAIOptions.setLevelRandSeed(evaluationSeed++);

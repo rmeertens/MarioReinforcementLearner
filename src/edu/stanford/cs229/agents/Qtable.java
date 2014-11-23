@@ -88,12 +88,12 @@ public abstract class Qtable {
    *          current map (state)
    * @return the action to be taken by the calling progam
    */
-  public int getNextAction(long stateNumber) {
+  public int getNextAction(long stateNumber, boolean isLearning) {
     prevState = stateNumber;
     if (randomGenerator.nextFloat() < explorationChance) {
       prevAction = explore();
     } else {
-      prevAction = getBestAction(stateNumber);
+      prevAction = getBestAction(stateNumber, isLearning);
     }
     return prevAction;
   }
@@ -116,7 +116,7 @@ public abstract class Qtable {
    *          current map (state)
    * @return the action with the highest Q value
    */
-  public abstract int getBestAction(long stateNumber);
+  public abstract int getBestAction(long stateNumber, boolean isLearning);
 
   /**
    * The explore function is called for e-greedy algorithms. It can choose an
@@ -139,7 +139,7 @@ public abstract class Qtable {
    * @param reward The reward at the current state.
    * @param currentStateNumber The current state number.
    */
-  public abstract void updateQvalue(float reward, long currentStateNumber);
+  public abstract void updateQvalue(float reward, long currentStateNumber, boolean isLearning);
 
   /**
    * The getActionsQValues function returns an array of Q values for all the
@@ -150,10 +150,14 @@ public abstract class Qtable {
    * @param the current state
    * @return an array of Q values for all the actions available at given state.
    */
-  float[] getActionsQValues(long stateNumber) {
+  float[] getActionsQValues(long stateNumber, boolean isLearning) {
     if (!table.containsKey(stateNumber)) {
       float[] initialQvalues = getInitialQvalues(stateNumber);
       table.put(stateNumber, initialQvalues);
+      if(isLearning)
+      {
+    	  InformationSingleton.getInstance().exploreStateWhileLearning();
+      }
       return initialQvalues;
     }
     return table.get(stateNumber);

@@ -162,11 +162,16 @@ public class MarioRLAgent implements LearningAgent {
 	public boolean[] getAction() {
 		// Transforms the best action number to action array.
 		int actionNumber = actionTable.getNextAction(currentState
-				.getStateNumber());
+				.getStateNumber(), this.currentPhase==Phase.LEARN);
 		// System.out.println("MarioRLAgent.getAction: Current phas learn: " +
 		// (this.currentPhase == Phase.LEARN) + " eval: " +
 		// (this.currentPhase==Phase.EVAL) + " else: " +
 		// (this.currentPhase==Phase.INIT));
+		if(this.currentPhase == Phase.LEARN)
+		{
+			//System.out.println("We are now learning" + InformationSingleton.getInstance().getFramesTrained());
+			InformationSingleton.getInstance().trainFrame();
+		}
 		if (this.currentPhase == Phase.LEARN
 				&& LearningParams.PLAYING_WITH_TWITCH) {
 			int newactionNumber = twitchObject.modifyAction(actionNumber);
@@ -204,10 +209,15 @@ public class MarioRLAgent implements LearningAgent {
 			// Start learning after Mario lands on the ground.
 			Logger.println(1, "============== Learning Phase =============");
 			currentPhase = Phase.LEARN;
-		} else if (currentPhase == Phase.LEARN) {
+		} 
+		else if (currentPhase == Phase.LEARN) {
 			// Update the Qvalue entry in the Qtable.
-			actionTable.updateQvalue(currentState.calculateReward(),
-					currentState.getStateNumber());
+			//System.out.println("Updating the qvalue as we are learning");
+			actionTable.updateQvalue(currentState.calculateReward(),currentState.getStateNumber(), currentPhase==Phase.LEARN);
+		}
+		else
+		{
+			//System.out.println("Not learning and not init");
 		}
 	}
 
@@ -257,6 +267,10 @@ public class MarioRLAgent implements LearningAgent {
 		options.setMarioMode(0);
 		options.setLevelRandSeed(InformationSingleton.getInstance()
 				.getLevelReached());
+		
+		// TODO maybe change this
+		//InformationSingleton.getInstance().setLevel(InformationSingleton.getInstance().getLevelReached()+1);
+		
 		options.setVisualization(LearningParams.VISUALISE_LEARNING);
 		// options.setScale2X(true);
 		for (int i = 0; i < LearningParams.NUM_TRAINING_ITERATIONS; i++) {
