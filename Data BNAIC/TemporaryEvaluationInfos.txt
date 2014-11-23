@@ -1,0 +1,212 @@
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 177062 ms; Status: Loss; Mode: small;  Passed (Cells): 242;  Passed (Phys): 3879; Time Spent: 166; Time Left: 33; Coins: 109; Hidden blocks: 0; Mushrooms: 2; Flowers: 1; Collisions: 4; kills: 29; By Fire: 1; By Shell: 0; By Stomp: 28; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 0
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 3335 ms; Status: Loss; Mode: small;  Passed (Cells): 7;  Passed (Phys): 125; Time Spent: 3; Time Left: 196; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 0
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 148033 ms; Status: WIN!; Mode: small;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 139; Time Left: 61; Coins: 108; Hidden blocks: 0; Mushrooms: 2; Flowers: 1; Collisions: 3; kills: 31; By Fire: 9; By Shell: 0; By Stomp: 22; MEMO INFO: WIN;  level: 0
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 138734 ms; Status: WIN!; Mode: Large;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 130; Time Left: 69; Coins: 119; Hidden blocks: 0; Mushrooms: 1; Flowers: 1; Collisions: 1; kills: 38; By Fire: 1; By Shell: 0; By Stomp: 37; MEMO INFO: WIN;  level: 1
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 20303 ms; Status: Loss; Mode: small;  Passed (Cells): 42;  Passed (Phys): 683; Time Spent: 19; Time Left: 180; Coins: 4; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 6; By Fire: 0; By Shell: 0; By Stomp: 6; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 2
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 25843 ms; Status: Loss; Mode: small;  Passed (Cells): 46;  Passed (Phys): 749; Time Spent: 24; Time Left: 175; Coins: 4; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 6; By Fire: 0; By Shell: 0; By Stomp: 6; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 2
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 87542 ms; Status: Loss; Mode: small;  Passed (Cells): 155;  Passed (Phys): 2486; Time Spent: 82; Time Left: 117; Coins: 31; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 20; By Fire: 0; By Shell: 0; By Stomp: 20; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 2
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 180480 ms; Status: WIN!; Mode: small;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 169; Time Left: 30; Coins: 78; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 0; kills: 30; By Fire: 0; By Shell: 0; By Stomp: 30; MEMO INFO: WIN;  level: 2
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 191415 ms; Status: Loss; Mode: small;  Passed (Cells): 224;  Passed (Phys): 3593; Time Spent: 179; Time Left: 20; Coins: 73; Hidden blocks: 0; Mushrooms: 2; Flowers: 1; Collisions: 3; kills: 24; By Fire: 2; By Shell: 0; By Stomp: 22; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 3
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 15547 ms; Status: Loss; Mode: small;  Passed (Cells): 28;  Passed (Phys): 450; Time Spent: 14; Time Left: 185; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 2; By Fire: 0; By Shell: 0; By Stomp: 2; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 3
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 211008 ms; Status: WIN!; Mode: small;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 198; Time Left: 1; Coins: 96; Hidden blocks: 0; Mushrooms: 4; Flowers: 0; Collisions: 3; kills: 37; By Fire: 0; By Shell: 0; By Stomp: 37; MEMO INFO: WIN;  level: 3
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 15333 ms; Status: Loss; Mode: small;  Passed (Cells): 46;  Passed (Phys): 738; Time Spent: 14; Time Left: 185; Coins: 8; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 5; By Fire: 0; By Shell: 0; By Stomp: 5; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 18885 ms; Status: Loss; Mode: small;  Passed (Cells): 47;  Passed (Phys): 758; Time Spent: 17; Time Left: 182; Coins: 11; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 2; By Fire: 0; By Shell: 0; By Stomp: 2; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 17536 ms; Status: Loss; Mode: small;  Passed (Cells): 48;  Passed (Phys): 768; Time Spent: 16; Time Left: 183; Coins: 9; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 6; By Fire: 0; By Shell: 0; By Stomp: 6; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 33014 ms; Status: Loss; Mode: small;  Passed (Cells): 76;  Passed (Phys): 1225; Time Spent: 31; Time Left: 169; Coins: 21; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 6; By Fire: 0; By Shell: 0; By Stomp: 6; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 7596 ms; Status: Loss; Mode: small;  Passed (Cells): 21;  Passed (Phys): 347; Time Spent: 7; Time Left: 192; Coins: 9; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 1; By Fire: 0; By Shell: 0; By Stomp: 1; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 20659 ms; Status: Loss; Mode: small;  Passed (Cells): 53;  Passed (Phys): 856; Time Spent: 19; Time Left: 180; Coins: 16; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 4; By Fire: 0; By Shell: 0; By Stomp: 4; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 34505 ms; Status: Loss; Mode: small;  Passed (Cells): 68;  Passed (Phys): 1092; Time Spent: 32; Time Left: 167; Coins: 21; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 5; By Fire: 0; By Shell: 0; By Stomp: 5; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 2339 ms; Status: Loss; Mode: small;  Passed (Cells): 8;  Passed (Phys): 131; Time Spent: 2; Time Left: 197; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 38196 ms; Status: Loss; Mode: small;  Passed (Cells): 95;  Passed (Phys): 1530; Time Spent: 35; Time Left: 164; Coins: 30; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 2; kills: 7; By Fire: 0; By Shell: 0; By Stomp: 7; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 34505 ms; Status: Loss; Mode: small;  Passed (Cells): 73;  Passed (Phys): 1173; Time Spent: 32; Time Left: 167; Coins: 19; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 9; By Fire: 0; By Shell: 0; By Stomp: 9; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 124036 ms; Status: WIN!; Mode: small;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 116; Time Left: 83; Coins: 78; Hidden blocks: 0; Mushrooms: 2; Flowers: 0; Collisions: 2; kills: 21; By Fire: 0; By Shell: 0; By Stomp: 21; MEMO INFO: WIN;  level: 4
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 181047 ms; Status: WIN!; Mode: FIRE;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 170; Time Left: 30; Coins: 105; Hidden blocks: 0; Mushrooms: 2; Flowers: 1; Collisions: 1; kills: 32; By Fire: 10; By Shell: 0; By Stomp: 22; MEMO INFO: WIN;  level: 5
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 46929 ms; Status: Loss; Mode: small;  Passed (Cells): 55;  Passed (Phys): 888; Time Spent: 44; Time Left: 155; Coins: 20; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 10; By Fire: 0; By Shell: 0; By Stomp: 10; MEMO INFO: Reason of death: Collision with a creature [Flower];  level: 6
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 88537 ms; Status: Loss; Mode: small;  Passed (Cells): 184;  Passed (Phys): 2959; Time Spent: 83; Time Left: 116; Coins: 49; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 20; By Fire: 0; By Shell: 0; By Stomp: 20; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 6
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 57651 ms; Status: Loss; Mode: small;  Passed (Cells): 109;  Passed (Phys): 1755; Time Spent: 54; Time Left: 145; Coins: 40; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 14; By Fire: 0; By Shell: 0; By Stomp: 14; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 6
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 27477 ms; Status: Loss; Mode: small;  Passed (Cells): 36;  Passed (Phys): 582; Time Spent: 25; Time Left: 174; Coins: 12; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 4; By Fire: 0; By Shell: 0; By Stomp: 4; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 6
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 176078 ms; Status: WIN!; Mode: Large;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 165; Time Left: 34; Coins: 63; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 0; kills: 24; By Fire: 0; By Shell: 0; By Stomp: 24; MEMO INFO: WIN;  level: 6
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 178776 ms; Status: WIN!; Mode: small;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 167; Time Left: 32; Coins: 143; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 1; kills: 29; By Fire: 0; By Shell: 0; By Stomp: 29; MEMO INFO: WIN;  level: 7
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 85267 ms; Status: Loss; Mode: small;  Passed (Cells): 123;  Passed (Phys): 1968; Time Spent: 80; Time Left: 119; Coins: 70; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 2; kills: 9; By Fire: 0; By Shell: 0; By Stomp: 9; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 8
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 14129 ms; Status: Loss; Mode: small;  Passed (Cells): 29;  Passed (Phys): 470; Time Spent: 13; Time Left: 186; Coins: 8; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 1; By Fire: 0; By Shell: 0; By Stomp: 1; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 8
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 191483 ms; Status: WIN!; Mode: FIRE;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 179; Time Left: 20; Coins: 136; Hidden blocks: 0; Mushrooms: 1; Flowers: 1; Collisions: 0; kills: 29; By Fire: 15; By Shell: 0; By Stomp: 14; MEMO INFO: WIN;  level: 8
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 9300 ms; Status: Loss; Mode: small;  Passed (Cells): 16;  Passed (Phys): 265; Time Spent: 8; Time Left: 191; Coins: 4; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 1; By Fire: 0; By Shell: 0; By Stomp: 1; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 54456 ms; Status: Loss; Mode: small;  Passed (Cells): 149;  Passed (Phys): 2385; Time Spent: 51; Time Left: 148; Coins: 55; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 14; By Fire: 0; By Shell: 0; By Stomp: 14; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 4899 ms; Status: Loss; Mode: small;  Passed (Cells): 14;  Passed (Phys): 235; Time Spent: 4; Time Left: 195; Coins: 2; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 44304 ms; Status: Loss; Mode: small;  Passed (Cells): 95;  Passed (Phys): 1529; Time Spent: 41; Time Left: 158; Coins: 32; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 10; By Fire: 0; By Shell: 0; By Stomp: 10; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 62691 ms; Status: Loss; Mode: small;  Passed (Cells): 95;  Passed (Phys): 1522; Time Spent: 58; Time Left: 141; Coins: 42; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 8; By Fire: 0; By Shell: 0; By Stomp: 8; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 6034 ms; Status: Loss; Mode: small;  Passed (Cells): 15;  Passed (Phys): 251; Time Spent: 5; Time Left: 194; Coins: 4; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 18175 ms; Status: Loss; Mode: small;  Passed (Cells): 18;  Passed (Phys): 288; Time Spent: 17; Time Left: 182; Coins: 8; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 3; By Fire: 0; By Shell: 0; By Stomp: 3; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 18668 ms; Status: Loss; Mode: small;  Passed (Cells): 49;  Passed (Phys): 784; Time Spent: 17; Time Left: 182; Coins: 12; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 5; By Fire: 0; By Shell: 0; By Stomp: 5; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 5819 ms; Status: Loss; Mode: small;  Passed (Cells): 16;  Passed (Phys): 256; Time Spent: 5; Time Left: 194; Coins: 1; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 62054 ms; Status: Loss; Mode: small;  Passed (Cells): 87;  Passed (Phys): 1396; Time Spent: 58; Time Left: 141; Coins: 32; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 10; By Fire: 0; By Shell: 0; By Stomp: 10; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 17250 ms; Status: Loss; Mode: small;  Passed (Cells): 45;  Passed (Phys): 730; Time Spent: 16; Time Left: 183; Coins: 13; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 1; By Fire: 0; By Shell: 0; By Stomp: 1; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 8234 ms; Status: Loss; Mode: small;  Passed (Cells): 18;  Passed (Phys): 291; Time Spent: 7; Time Left: 192; Coins: 3; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 1; By Fire: 0; By Shell: 0; By Stomp: 1; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 6672 ms; Status: Loss; Mode: small;  Passed (Cells): 14;  Passed (Phys): 235; Time Spent: 6; Time Left: 193; Coins: 2; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 4898 ms; Status: Loss; Mode: small;  Passed (Cells): 17;  Passed (Phys): 282; Time Spent: 4; Time Left: 195; Coins: 2; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 16683 ms; Status: Loss; Mode: small;  Passed (Cells): 50;  Passed (Phys): 810; Time Spent: 15; Time Left: 184; Coins: 14; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 3; By Fire: 0; By Shell: 0; By Stomp: 3; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 4969 ms; Status: Loss; Mode: small;  Passed (Cells): 17;  Passed (Phys): 277; Time Spent: 4; Time Left: 195; Coins: 1; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 56657 ms; Status: Loss; Mode: small;  Passed (Cells): 140;  Passed (Phys): 2251; Time Spent: 53; Time Left: 146; Coins: 62; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 10; By Fire: 0; By Shell: 0; By Stomp: 10; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 7383 ms; Status: Loss; Mode: small;  Passed (Cells): 18;  Passed (Phys): 299; Time Spent: 7; Time Left: 193; Coins: 4; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 1; By Fire: 0; By Shell: 0; By Stomp: 1; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 4897 ms; Status: Loss; Mode: small;  Passed (Cells): 17;  Passed (Phys): 282; Time Spent: 4; Time Left: 195; Coins: 2; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 16969 ms; Status: Loss; Mode: small;  Passed (Cells): 48;  Passed (Phys): 778; Time Spent: 16; Time Left: 184; Coins: 9; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 4; By Fire: 0; By Shell: 0; By Stomp: 4; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 16400 ms; Status: Loss; Mode: small;  Passed (Cells): 49;  Passed (Phys): 785; Time Spent: 15; Time Left: 184; Coins: 12; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 3; By Fire: 0; By Shell: 0; By Stomp: 3; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 47709 ms; Status: Loss; Mode: small;  Passed (Cells): 87;  Passed (Phys): 1401; Time Spent: 44; Time Left: 155; Coins: 37; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 10; By Fire: 0; By Shell: 0; By Stomp: 10; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 58645 ms; Status: Loss; Mode: small;  Passed (Cells): 103;  Passed (Phys): 1663; Time Spent: 55; Time Left: 144; Coins: 44; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 9; By Fire: 0; By Shell: 0; By Stomp: 9; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 5818 ms; Status: Loss; Mode: small;  Passed (Cells): 16;  Passed (Phys): 257; Time Spent: 5; Time Left: 194; Coins: 2; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 74833 ms; Status: Loss; Mode: small;  Passed (Cells): 75;  Passed (Phys): 1215; Time Spent: 70; Time Left: 129; Coins: 28; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 9; By Fire: 0; By Shell: 0; By Stomp: 9; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 5888 ms; Status: Loss; Mode: small;  Passed (Cells): 16;  Passed (Phys): 257; Time Spent: 5; Time Left: 194; Coins: 4; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 20091 ms; Status: Loss; Mode: small;  Passed (Cells): 48;  Passed (Phys): 782; Time Spent: 18; Time Left: 181; Coins: 11; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 2; By Fire: 0; By Shell: 0; By Stomp: 2; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 11571 ms; Status: Loss; Mode: small;  Passed (Cells): 30;  Passed (Phys): 487; Time Spent: 10; Time Left: 189; Coins: 1; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 2; By Fire: 0; By Shell: 0; By Stomp: 2; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 14909 ms; Status: Loss; Mode: small;  Passed (Cells): 47;  Passed (Phys): 764; Time Spent: 14; Time Left: 186; Coins: 10; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 76961 ms; Status: Loss; Mode: small;  Passed (Cells): 139;  Passed (Phys): 2225; Time Spent: 72; Time Left: 127; Coins: 66; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 16; By Fire: 0; By Shell: 0; By Stomp: 16; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 121621 ms; Status: WIN!; Mode: Large;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 114; Time Left: 85; Coins: 105; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 0; kills: 19; By Fire: 0; By Shell: 0; By Stomp: 19; MEMO INFO: WIN;  level: 9
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 43381 ms; Status: Loss; Mode: small;  Passed (Cells): 54;  Passed (Phys): 879; Time Spent: 40; Time Left: 159; Coins: 11; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 6; By Fire: 0; By Shell: 0; By Stomp: 6; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 10
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 178067 ms; Status: WIN!; Mode: FIRE;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 167; Time Left: 32; Coins: 45; Hidden blocks: 0; Mushrooms: 3; Flowers: 1; Collisions: 2; kills: 28; By Fire: 8; By Shell: 0; By Stomp: 20; MEMO INFO: WIN;  level: 10
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 15263 ms; Status: Loss; Mode: small;  Passed (Cells): 41;  Passed (Phys): 664; Time Spent: 14; Time Left: 185; Coins: 8; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 4; By Fire: 0; By Shell: 0; By Stomp: 4; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 22791 ms; Status: Loss; Mode: small;  Passed (Cells): 49;  Passed (Phys): 790; Time Spent: 21; Time Left: 178; Coins: 11; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 5; By Fire: 0; By Shell: 0; By Stomp: 5; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 23925 ms; Status: Loss; Mode: small;  Passed (Cells): 41;  Passed (Phys): 656; Time Spent: 22; Time Left: 177; Coins: 13; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 4; By Fire: 0; By Shell: 0; By Stomp: 4; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 29535 ms; Status: Loss; Mode: small;  Passed (Cells): 68;  Passed (Phys): 1089; Time Spent: 27; Time Left: 172; Coins: 25; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 4; By Fire: 0; By Shell: 0; By Stomp: 4; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 18743 ms; Status: Loss; Mode: small;  Passed (Cells): 48;  Passed (Phys): 776; Time Spent: 17; Time Left: 182; Coins: 14; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 3; By Fire: 0; By Shell: 0; By Stomp: 3; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 4686 ms; Status: Loss; Mode: small;  Passed (Cells): 17;  Passed (Phys): 282; Time Spent: 4; Time Left: 195; Coins: 3; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 31167 ms; Status: Loss; Mode: small;  Passed (Cells): 68;  Passed (Phys): 1095; Time Spent: 29; Time Left: 170; Coins: 25; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 8; By Fire: 0; By Shell: 0; By Stomp: 8; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 38836 ms; Status: Loss; Mode: small;  Passed (Cells): 74;  Passed (Phys): 1185; Time Spent: 36; Time Left: 163; Coins: 24; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 9; By Fire: 0; By Shell: 0; By Stomp: 9; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 52113 ms; Status: Loss; Mode: small;  Passed (Cells): 81;  Passed (Phys): 1296; Time Spent: 49; Time Left: 151; Coins: 24; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 11; By Fire: 0; By Shell: 0; By Stomp: 11; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 23501 ms; Status: Loss; Mode: small;  Passed (Cells): 51;  Passed (Phys): 817; Time Spent: 22; Time Left: 177; Coins: 11; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 5; By Fire: 0; By Shell: 0; By Stomp: 5; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 171181 ms; Status: WIN!; Mode: FIRE;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 160; Time Left: 39; Coins: 132; Hidden blocks: 0; Mushrooms: 2; Flowers: 3; Collisions: 3; kills: 30; By Fire: 4; By Shell: 0; By Stomp: 26; MEMO INFO: WIN;  level: 11
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 66455 ms; Status: Loss; Mode: small;  Passed (Cells): 131;  Passed (Phys): 2111; Time Spent: 62; Time Left: 137; Coins: 26; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 11; By Fire: 0; By Shell: 0; By Stomp: 11; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 12
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 76678 ms; Status: Loss; Mode: small;  Passed (Cells): 105;  Passed (Phys): 1694; Time Spent: 72; Time Left: 128; Coins: 25; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 2; kills: 13; By Fire: 0; By Shell: 0; By Stomp: 13; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 12
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 8093 ms; Status: Loss; Mode: small;  Passed (Cells): 19;  Passed (Phys): 314; Time Spent: 7; Time Left: 192; Coins: 10; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 12
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 60846 ms; Status: Loss; Mode: small;  Passed (Cells): 83;  Passed (Phys): 1339; Time Spent: 57; Time Left: 142; Coins: 15; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 8; By Fire: 0; By Shell: 0; By Stomp: 8; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 12
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 135751 ms; Status: WIN!; Mode: small;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 127; Time Left: 72; Coins: 64; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 0; kills: 22; By Fire: 0; By Shell: 0; By Stomp: 22; MEMO INFO: WIN;  level: 12
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 136248 ms; Status: WIN!; Mode: FIRE;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 128; Time Left: 72; Coins: 101; Hidden blocks: 0; Mushrooms: 1; Flowers: 2; Collisions: 0; kills: 35; By Fire: 25; By Shell: 0; By Stomp: 10; MEMO INFO: WIN;  level: 13
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 6531 ms; Status: Loss; Mode: small;  Passed (Cells): 21;  Passed (Phys): 347; Time Spent: 6; Time Left: 193; Coins: 5; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 14
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 3336 ms; Status: Loss; Mode: small;  Passed (Cells): 7;  Passed (Phys): 127; Time Spent: 3; Time Left: 196; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 14
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 83280 ms; Status: Loss; Mode: small;  Passed (Cells): 123;  Passed (Phys): 1970; Time Spent: 78; Time Left: 121; Coins: 57; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 2; kills: 11; By Fire: 0; By Shell: 0; By Stomp: 11; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 14
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 3833 ms; Status: Loss; Mode: small;  Passed (Cells): 6;  Passed (Phys): 110; Time Spent: 3; Time Left: 196; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 14
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 203699 ms; Status: WIN!; Mode: small;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 191; Time Left: 8; Coins: 138; Hidden blocks: 0; Mushrooms: 2; Flowers: 0; Collisions: 2; kills: 29; By Fire: 0; By Shell: 0; By Stomp: 29; MEMO INFO: WIN;  level: 14
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 8875 ms; Status: Loss; Mode: small;  Passed (Cells): 22;  Passed (Phys): 354; Time Spent: 8; Time Left: 191; Coins: 14; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 1; By Fire: 0; By Shell: 0; By Stomp: 1; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 32872 ms; Status: Loss; Mode: small;  Passed (Cells): 66;  Passed (Phys): 1062; Time Spent: 30; Time Left: 169; Coins: 18; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 4; By Fire: 0; By Shell: 0; By Stomp: 4; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 11644 ms; Status: Loss; Mode: small;  Passed (Cells): 22;  Passed (Phys): 367; Time Spent: 11; Time Left: 189; Coins: 16; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 1; By Fire: 0; By Shell: 0; By Stomp: 1; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 3263 ms; Status: Loss; Mode: small;  Passed (Cells): 6;  Passed (Phys): 108; Time Spent: 3; Time Left: 196; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 2840 ms; Status: Loss; Mode: small;  Passed (Cells): 7;  Passed (Phys): 121; Time Spent: 2; Time Left: 197; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 153289 ms; Status: Loss; Mode: small;  Passed (Cells): 187;  Passed (Phys): 2994; Time Spent: 144; Time Left: 56; Coins: 87; Hidden blocks: 0; Mushrooms: 1; Flowers: 1; Collisions: 3; kills: 21; By Fire: 9; By Shell: 0; By Stomp: 12; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 118357 ms; Status: Loss; Mode: small;  Passed (Cells): 162;  Passed (Phys): 2606; Time Spent: 111; Time Left: 88; Coins: 60; Hidden blocks: 0; Mushrooms: 3; Flowers: 0; Collisions: 3; kills: 12; By Fire: 0; By Shell: 0; By Stomp: 12; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 3973 ms; Status: Loss; Mode: small;  Passed (Cells): 5;  Passed (Phys): 92; Time Spent: 3; Time Left: 196; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 35287 ms; Status: Loss; Mode: small;  Passed (Cells): 66;  Passed (Phys): 1067; Time Spent: 33; Time Left: 166; Coins: 15; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 6; By Fire: 0; By Shell: 0; By Stomp: 6; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 13562 ms; Status: Loss; Mode: small;  Passed (Cells): 30;  Passed (Phys): 491; Time Spent: 12; Time Left: 187; Coins: 14; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 3; By Fire: 0; By Shell: 0; By Stomp: 3; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 212998 ms; Status: Loss; Mode: FIRE;  Passed (Cells): 204;  Passed (Phys): 3275; Time Spent: 200; Time Left: 0; Coins: 77; Hidden blocks: 0; Mushrooms: 2; Flowers: 1; Collisions: 1; kills: 28; By Fire: 0; By Shell: 0; By Stomp: 28; MEMO INFO: Reason of death: Time out!;  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 75828 ms; Status: Loss; Mode: small;  Passed (Cells): 150;  Passed (Phys): 2407; Time Spent: 71; Time Left: 128; Coins: 53; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 2; kills: 16; By Fire: 0; By Shell: 0; By Stomp: 16; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 39972 ms; Status: Loss; Mode: small;  Passed (Cells): 70;  Passed (Phys): 1129; Time Spent: 37; Time Left: 162; Coins: 18; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 5; By Fire: 0; By Shell: 0; By Stomp: 5; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 3620 ms; Status: Loss; Mode: small;  Passed (Cells): 6;  Passed (Phys): 98; Time Spent: 3; Time Left: 196; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 3051 ms; Status: Loss; Mode: small;  Passed (Cells): 7;  Passed (Phys): 116; Time Spent: 2; Time Left: 197; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 130283 ms; Status: Loss; Mode: small;  Passed (Cells): 191;  Passed (Phys): 3059; Time Spent: 122; Time Left: 77; Coins: 72; Hidden blocks: 0; Mushrooms: 1; Flowers: 0; Collisions: 2; kills: 23; By Fire: 0; By Shell: 0; By Stomp: 23; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 42173 ms; Status: Loss; Mode: small;  Passed (Cells): 91;  Passed (Phys): 1463; Time Spent: 39; Time Left: 160; Coins: 22; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 8; By Fire: 0; By Shell: 0; By Stomp: 8; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 3976 ms; Status: Loss; Mode: small;  Passed (Cells): 5;  Passed (Phys): 91; Time Spent: 3; Time Left: 196; Coins: 0; Hidden blocks: 0; Mushrooms: 0; Flowers: 0; Collisions: 1; kills: 0; By Fire: 0; By Shell: 0; By Stomp: 0; MEMO INFO: Reason of death: Collision with a creature [Goomba];  level: 15
+
+[MarioAI] ~ Evaluation Results: Evaluation lasted: 132982 ms; Status: WIN!; Mode: Large;  Passed (Cells): 256;  Passed (Phys): 4096; Time Spent: 124; Time Left: 75; Coins: 107; Hidden blocks: 0; Mushrooms: 1; Flowers: 3; Collisions: 1; kills: 41; By Fire: 24; By Shell: 0; By Stomp: 17; MEMO INFO: WIN;  level: 15
